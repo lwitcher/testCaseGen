@@ -88,7 +88,7 @@ if __name__ == '__main__':
         for l in allcases:
             print(l)
             count = 0
-            onesense = parse_testcase_describe(l)      
+            onesense = parse_testcase_describe(l.strip())      
             for x in onesense:
                 caseid=''
                 (a,b,c,d) = x
